@@ -25,15 +25,18 @@
     },
     {
       "src": "windows11/SmallTile.scale-100.png",
-      "sizes": "71x71"
+      "sizes": "71x71",
+      "purpose": "any"
     },
     {
       "src": "windows11/SmallTile.scale-125.png",
-      "sizes": "89x89"
+      "sizes": "89x89",
+      "purpose": "any"
     },
     {
       "src": "windows11/SmallTile.scale-150.png",
-      "sizes": "107x107"
+      "sizes": "107x107",
+      "purpose": "any"
     },
     {
       "src": "windows11/SmallTile.scale-200.png",
