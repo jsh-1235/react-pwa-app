@@ -29,8 +29,6 @@ export default function Home() {
   const handleClose = (e) => {
     e.preventDefault();
 
-    window.open("about:blank", "_self");
-
     window.close();
   };
 
@@ -41,13 +39,13 @@ export default function Home() {
         <div className={styles.buttonStyle}>
           <div className="button">
             <div className="button" onClick={(e) => navigate("/main")}>
-              BT-ACTB_LITE
+              Create
             </div>
           </div>
         </div>
         <div className={styles.buttonStyle}>
           <div className="button" onClick={(e) => navigate("/intro")}>
-            BT-ACTB
+            Play
           </div>
         </div>
       </main>

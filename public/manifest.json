@@ -54,6 +54,7 @@
       "purpose": "maskable"
     }
   ],
+  "scope": "/",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#B6401A",
