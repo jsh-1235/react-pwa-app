@@ -25,8 +25,7 @@
     },
     {
       "src": "maskable_icon.png",
-      "sizes": "512x512",
-      "purpose": "maskable"
+      "sizes": "512x512"
     },
     {
       "src": "windows11/SmallTile.scale-100.png",
@@ -354,7 +353,7 @@
     },
     {
       "src": "android/android-launchericon-192-192.png",
-      "sizes": "192x192",
+      "sizes": "192x192"
     },
     {
       "src": "android/android-launchericon-144-144.png",
