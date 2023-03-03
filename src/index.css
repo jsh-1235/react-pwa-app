@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --font-size: 1rem;
+  --page-width: 1000px;
+  --page-font-min-size: 4px;
+  --page-font-max-size: 16px;
+  --page-font-size: var(--page-font-max-size);
   --theme-component-color: #03a9f4;
   --theme-component-hover: #67daff;
   --theme-component-active: #007ac1;
@@ -11,15 +14,25 @@
 
 * {
   font-family: "Rajdhani", sans-serif;
+  font-size: var(--page-font-size);
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: var(--font-size);
 }
 
-@media only screen and (max-width: 768px) {
+/* 1000px 이하일 때 적용 */
+@media (max-width: 1000px) {
   :root {
-    --font-size: 0.5rem;
+    --page-width: 100%;
+    --page-font-size: clamp(var(--page-font-min-size), 2vw, var(--page-font-max-size));
+  }
+}
+
+/* 1000px 이상일 때 적용 */
+@media (min-width: 1000px) {
+  :root {
+    --page-width: 1000px;
   }
 }
