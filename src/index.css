@@ -1,13 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --font-size: 1rem;
+  --theme-component-color: #03a9f4;
+  --theme-component-hover: #67daff;
+  --theme-component-active: #007ac1;
+  --theme-component-disabled: #607d8b;
+  --theme-component-text-disabled: #8eacbb;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: "Rajdhani", sans-serif;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: var(--font-size);
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+    --font-size: 0.5rem;
+  }
 }

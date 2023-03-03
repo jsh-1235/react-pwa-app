@@ -1,0 +1,61 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background-color: var(--theme-component-color);
+  color: white;
+  font-size: inherit;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.button:hover {
+  background-color: var(--theme-component-hover);
+  cursor: pointer;
+  transition-property: background-color, cursor;
+  transition-duration: 0.5s;
+}
+
+.button:active {
+  background-color: var(--theme-component-active);
+  transition-property: background-color, cursor;
+  transition-duration: 0.5s;
+}
+
+.button:disabled {
+  background-color: var(--theme-component-disabled);
+  color: var(--theme-accent-text-disabled);
+}
+
+.image-button {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.image-button:hover {
+  color: var(--theme-component-hover);
+  cursor: pointer;
+  transition-property: color, cursor;
+  transition-duration: 0.5s;
+}
+
+.image-button:active {
+  color: var(--theme-component-active);
+  transition-property: color, cursor;
+  transition-duration: 0.5s;
+}
+
+.image-button:disabled {
+  color: var(--theme-component-disabled);
+}
