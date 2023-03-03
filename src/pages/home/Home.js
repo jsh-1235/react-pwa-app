@@ -29,7 +29,11 @@ export default function Home() {
   const handleClose = (e) => {
     e.preventDefault();
 
-    window.close();
+    const custom = window.open("about:blank", "_self");
+
+    custom.close();
+
+    // window.close();
   };
 
   return (
