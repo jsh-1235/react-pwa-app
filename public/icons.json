@@ -1,28 +1,5 @@
 {
-  "short_name": "BT Inc",
-  "name": "Best Technology",
-  "dir": "auto",
-  "lang": "ko-KR",
-  "categories": [
-    "education",
-    "medical treatment"
-  ],
-  "description": "ACLS Simulator",
-  "orientation": "portrait",
-  "screenshots": [
-    {
-      "src": "windows11/Wide310x150Logo.scale-400.png",
-      "sizes": "1240x600",
-      "type": "image/png"
-    }
-  ],
-  "prefer_related_applications": true,
   "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 48x48 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
     {
       "src": "windows11/SmallTile.scale-100.png",
       "sizes": "71x71"
@@ -349,8 +326,7 @@
     },
     {
       "src": "android/android-launchericon-192-192.png",
-      "sizes": "192x192",
-      "purpose": "maskable"
+      "sizes": "192x192"
     },
     {
       "src": "android/android-launchericon-144-144.png",
@@ -472,9 +448,5 @@
       "src": "ios/1024.png",
       "sizes": "1024x1024"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#B6401A",
-  "background_color": "#0E5476"
+  ]
 }
