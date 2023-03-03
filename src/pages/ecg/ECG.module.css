@@ -1,0 +1,81 @@
+:root {
+  --page-width: 1000px;
+  --page-font-min-size: 4px;
+  --page-font-max-size: 16px;
+  --page-font-size: var(--page-font-max-size);
+}
+
+.wrapper {
+  width: var(--page-width);
+  color: white;
+  /* text-align: center; */
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.header {
+  height: 20vh;
+  background-color: #0277bd;
+  font-size: 2rem;
+  line-height: 20vh;
+  text-align: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  gap: 0px 0px;
+  align-content: stretch;
+  justify-content: stretch;
+  align-items: stretch;
+  justify-items: stretch;
+  align-self: stretch;
+  justify-self: stretch;
+  height: 70vh;
+
+}
+
+.aside {
+  background-color: #4527a0;
+  font-size: 2rem;
+}
+
+.contents {
+  background-color: #512da8;
+  font-size: 2rem;
+}
+
+.footer {
+  height: 10vh;
+  background-color: #673ab7;
+  font-size: 2rem;
+  line-height: 10vh;
+  text-align: center;
+}
+
+.footer>a {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+@media(hover: hover) and (pointer: fine) {
+  .footer>a:hover {
+    color: orange;
+  }
+}
+
+/* 1000px 이하일 때 적용 */
+@media (max-width: 1000px) {
+  :root {
+    --page-width: 100%;
+    --page-font-size: clamp(var(--page-font-min-size), 2vw, var(--page-font-max-size));
+  }
+}
+
+/* 1000px 이상일 때 적용 */
+@media (min-width: 1000px) {
+  :root {
+    --page-width: 1000px;
+  }
+}

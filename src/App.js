@@ -5,6 +5,7 @@ import { Route, Routes, Navigate, useNavigate, useLocation } from "react-router-
 
 const Intro = React.lazy(() => import("./pages/intro/Intro"));
 const Home = React.lazy(() => import("./pages/home/Home"));
+const ECG = React.lazy(() => import("./pages/ecg/ECG"));
 const NotFound = React.lazy(() => import("./pages/NotFound"));
 
 export default function App() {
@@ -22,7 +23,8 @@ export default function App() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
-        <Route path="/" element={<Home title="Home" />} />
+        <Route path="/" element={<ECG title="ECG" />} />
+        <Route path="/home" element={<Home title="Home" />} />
         <Route path="/intro" element={<Intro title="Intro" />} />
         <Route path="/none" element={<NotFound />} />
         <Route path="*" element={<NotFound />} />

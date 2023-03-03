@@ -11,32 +11,23 @@ export default function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const handleTabClose = (event) => {
-      event.preventDefault();
-
-      console.log("beforeunload event triggered");
-
-      return (event.returnValue = "Are you sure you want to exit?");
-    };
-
-    window.addEventListener("beforeunload", handleTabClose);
-
-    return () => {
-      window.removeEventListener("beforeunload", handleTabClose);
-    };
+    // const handleTabClose = (event) => {
+    //   event.preventDefault();
+    //   console.log("beforeunload event triggered");
+    //   return (event.returnValue = "Are you sure you want to exit?");
+    // };
+    // window.addEventListener("beforeunload", handleTabClose);
+    // return () => {
+    //   window.removeEventListener("beforeunload", handleTabClose);
+    // };
   }, []);
 
   const handleClose = (e) => {
     e.preventDefault();
 
-    // const custom = window.open("about:blank", "_self");
-
-    // custom.close();
-
-    window.open("", "_self", "");
-    window.close();
-
     // window.close();
+
+    // window.open("about:blank", "_self").close();
   };
 
   return (
