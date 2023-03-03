@@ -29,9 +29,12 @@ export default function Home() {
   const handleClose = (e) => {
     e.preventDefault();
 
-    const custom = window.open("about:blank", "_self");
+    // const custom = window.open("about:blank", "_self");
 
-    custom.close();
+    // custom.close();
+
+    window.open("", "_self", "");
+    window.close();
 
     // window.close();
   };
