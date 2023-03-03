@@ -24,19 +24,21 @@
       "type": "image/x-icon"
     },
     {
+      "src": "maskable_icon.png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },
+    {
       "src": "windows11/SmallTile.scale-100.png",
-      "sizes": "71x71",
-      "purpose": "any"
+      "sizes": "71x71"
     },
     {
       "src": "windows11/SmallTile.scale-125.png",
-      "sizes": "89x89",
-      "purpose": "any"
+      "sizes": "89x89"
     },
     {
       "src": "windows11/SmallTile.scale-150.png",
-      "sizes": "107x107",
-      "purpose": "any"
+      "sizes": "107x107"
     },
     {
       "src": "windows11/SmallTile.scale-200.png",
@@ -353,7 +355,6 @@
     {
       "src": "android/android-launchericon-192-192.png",
       "sizes": "192x192",
-      "purpose": "maskable"
     },
     {
       "src": "android/android-launchericon-144-144.png",
