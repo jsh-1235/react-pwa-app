@@ -5,7 +5,6 @@ import { Route, Routes, useNavigate, useLocation } from "react-router-dom";
 
 const Intro = React.lazy(() => import("./pages/intro/Intro"));
 const Home = React.lazy(() => import("./pages/home/Home"));
-const ECG = React.lazy(() => import("./pages/ecg/ECG"));
 const About = React.lazy(() => import("./pages/About"));
 const NotFound = React.lazy(() => import("./pages/NotFound"));
 
@@ -24,7 +23,6 @@ export default function App() {
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
         <Route path="/" element={<Home title="Home" />} />
-        {/* <Route path="/home" element={<Home title="Home" />} /> */}
         <Route path="/intro" element={<Intro title="Intro" />} />
         <Route path="/about" element={<About />} />
         <Route path="/none" element={<NotFound />} />
