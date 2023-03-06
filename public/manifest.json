@@ -1,7 +1,7 @@
 {
-  "short_name": "BT Inc",
-  "name": "Best Technology",
-  "description": "ACLS Simulator",
+  "short_name": "PWA",
+  "name": "Progressive Web Apps",
+  "description": "PWAs are web apps that use service workers, manifests, and other web-platform features in combination with progressive enhancement to give users an experience on par with native apps.",
   "categories": [
     "education",
     "medical treatment"
@@ -10,7 +10,7 @@
   "dir": "auto",
   "scope": "/",
   "start_url": "/",
-  "orientation": "portrait",
+  "orientation": "any",
   "display": "standalone",
   "display_override": [
     "standalone"
