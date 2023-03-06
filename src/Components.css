@@ -16,11 +16,13 @@
   overflow: hidden;
 }
 
-.button:hover {
-  background-color: var(--theme-component-hover);
-  cursor: pointer;
-  transition-property: background-color, cursor;
-  transition-duration: 0.5s;
+@media (hover: hover) {
+  .button:hover {
+    background-color: var(--theme-component-hover);
+    cursor: pointer;
+    transition-property: background-color, cursor;
+    transition-duration: 0.5s;
+  }
 }
 
 .button:active {
@@ -43,11 +45,13 @@
   color: white;
 }
 
-.image-button:hover {
-  color: var(--theme-component-hover);
-  cursor: pointer;
-  transition-property: color, cursor;
-  transition-duration: 0.5s;
+@media (hover: hover) {
+  .image-button:hover {
+    color: var(--theme-component-hover);
+    cursor: pointer;
+    transition-property: color, cursor;
+    transition-duration: 0.5s;
+  }
 }
 
 .image-button:active {
@@ -56,6 +60,6 @@
   transition-duration: 0.5s;
 }
 
-.image-button:disabled {
+.image-button[disabled] {
   color: var(--theme-component-disabled);
 }

@@ -21,7 +21,7 @@ const CONTENTS = styled.div`
 
 const HEADER = styled.span`
   color: white;
-  font-size: 4rem;
+  font-size: 3rem;
 `;
 
 const LINK = styled.a`
