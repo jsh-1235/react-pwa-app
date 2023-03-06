@@ -11,9 +11,9 @@
   "scope": "/",
   "start_url": "/",
   "orientation": "any",
-  "display": "standalone",
+  "display": "browser",
   "display_override": [
-    "standalone"
+    "browser"
   ],
   "prefer_related_applications": true,
   "theme_color": "#6D86B8",

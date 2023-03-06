@@ -3,6 +3,7 @@
 ## Scaffold Settings
 
 - npx create-react-app Project
+- npx create-react-app Project --template cra-template-pwa
 - cd Project
 - code .
 - npm run build
