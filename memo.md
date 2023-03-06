@@ -12,8 +12,8 @@
 ## Dependencies
 
 - npm install react-router react-router-dom
-- npm install redux react-redux
-- npm install redux-promise redux-thunk redux-pender redux-actions redux-form
+- npm add @reduxjs/toolkit
+- npm install react-redux redux-logger
 - npm install axios
 - npm install moment
 - npm install formik --save
