@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 import styles from "./Home.module.css";
 import "../../Components.css";
-import { AiFillCloseCircle } from "react-icons/ai";
+import { AiFillQuestionCircle } from "react-icons/ai";
 
 import { useEffect } from "react";
 
@@ -11,44 +11,34 @@ export default function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // const handleTabClose = (event) => {
-    //   event.preventDefault();
-    //   console.log("beforeunload event triggered");
-    //   return (event.returnValue = "Are you sure you want to exit?");
-    // };
-    // window.addEventListener("beforeunload", handleTabClose);
-    // return () => {
-    //   window.removeEventListener("beforeunload", handleTabClose);
-    // };
+    return () => {};
   }, []);
 
-  const handleClose = (e) => {
+  const handleAbout = (e) => {
     e.preventDefault();
 
-    // window.close();
-
-    // window.open("about:blank", "_self").close();
+    navigate("/about");
   };
 
   return (
     <div className={styles.container}>
-      <header className={styles.header}>제품 선택</header>
+      <header className={styles.header}>Select Mode</header>
       <main className={styles.menu}>
         <div className={styles.buttonStyle}>
           <div className="button">
             <div className="button" onClick={(e) => navigate("/main")}>
-              Create
+              Canvas Grid
             </div>
           </div>
         </div>
         <div className={styles.buttonStyle}>
           <div className="button" onClick={(e) => navigate("/intro")}>
-            Play
+            SVG Grid
           </div>
         </div>
       </main>
       <footer className={styles.footer}>
-        <AiFillCloseCircle className="image-button" size="64" onClick={handleClose} />
+        <AiFillQuestionCircle className="image-button" size="64" onClick={handleAbout} />
       </footer>
     </div>
   );

@@ -6,9 +6,11 @@
   justify-content: stretch;
   align-items: stretch;
   justify-items: stretch;
+  width: var(--page-width);
   height: 100vh;
   background-color: #282c34;
   color: white;
+  margin: 0 auto;
 }
 
 .header {
@@ -16,6 +18,7 @@
   justify-self: center;
   grid-column: 1 / span 1;
   font-size: 3rem;
+  text-transform: uppercase;
 }
 
 .menu {
@@ -36,19 +39,15 @@
 }
 
 .buttonStyle {
-  width: 20vw;
-  height: 20vh;
+  width: clamp(100px, 40vw, 400px);
+  height: clamp(100px, 20vh, 400px);
   border-radius: 16px;
-  font-size: 2rem;
-  margin: 2rem;
+  font-size: clamp(1rem, calc(1vw * 3), 2rem);
+  margin: 1rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .buttonStyle {
-    width: 40vw;
-    height: 20vh;
-    border-radius: 16px;
+@media only screen and (max-width: 480px) {
+  .header {
     font-size: 2rem;
-    margin: 2rem;
   }
 }

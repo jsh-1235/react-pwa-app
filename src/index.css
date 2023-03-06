@@ -14,12 +14,16 @@
 
 * {
   font-family: "Rajdhani", sans-serif;
-  font-size: var(--page-font-size);
+  font-size: var(--page-font-max-size);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #000000;
 }
 
 /* 1000px 이하일 때 적용 */

@@ -1,14 +1,23 @@
 {
   "short_name": "BT Inc",
   "name": "Best Technology",
-  "dir": "auto",
-  "lang": "ko-KR",
+  "description": "ACLS Simulator",
   "categories": [
     "education",
     "medical treatment"
   ],
-  "description": "ACLS Simulator",
+  "lang": "ko-KR",
+  "dir": "auto",
+  "scope": "/",
+  "start_url": "/",
   "orientation": "portrait",
+  "display": "standalone",
+  "display_override": [
+    "standalone"
+  ],
+  "prefer_related_applications": true,
+  "theme_color": "#6D86B8",
+  "background_color": "#ffffff",
   "screenshots": [
     {
       "src": "images/maskable_icon.png",
@@ -16,11 +25,24 @@
       "type": "image/png"
     }
   ],
-  "prefer_related_applications": true,
+  "shortcuts": [
+    {
+      "name": "About",
+      "short_name": "About",
+      "url": "/about",
+      "description": "Description of my application",
+      "icons": [
+        {
+          "src": "images/maskable_icon_x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 48x48 32x32 24x24 16x16",
+      "sizes": "64x64",
       "type": "image/x-icon"
     },
     {
@@ -53,10 +75,5 @@
       "sizes": "512x512",
       "purpose": "maskable"
     }
-  ],
-  "scope": "/",
-  "start_url": "/",
-  "display": "standalone",
-  "theme_color": "#6D86B8",
-  "background_color": "#673AB7"
+  ]
 }
