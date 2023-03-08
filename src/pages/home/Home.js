@@ -49,6 +49,7 @@ export default function Home() {
       </main>
       <footer className={styles.footer}>
         <AiFillQuestionCircle className="image-button" size="64" onClick={(e) => dispatch(setCount(count + 1))} />
+        <AiFillQuestionCircle className="image-button" size="64" onClick={(e) => dispatch({ type: "counter/setCount", payload: count + 1 })} />
         <AiFillQuestionCircle className="image-button" size="64" onClick={(e) => dispatch(fetchAsync("thunk"))} />
       </footer>
     </div>

@@ -20,6 +20,8 @@ export const counterSlice = createSlice({
   reducers: {
     setCount: (state, action) => {
       state.count = action.payload;
+
+      console.log(state, action.payload);
     },
   },
   extraReducers: (builder) => {
