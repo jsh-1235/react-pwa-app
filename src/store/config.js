@@ -10,9 +10,9 @@ export const store = configureStore({
   reducer: {
     counter: counterSlice.reducer,
     middleware: [logger],
-    devTools: process.env.NODE_ENV !== "production",
-    preloadedState: initialState,
   },
+  devTools: process.env.NODE_ENV !== "production",
+  preloadedState: initialState,
 });
 
 export default store;
