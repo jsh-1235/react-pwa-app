@@ -8,9 +8,7 @@ import { AiFillQuestionCircle } from "react-icons/ai";
 import { useEffect } from "react";
 
 import { useSelector, useDispatch } from "react-redux";
-import { setCount } from "../../store/slices/counter";
-
-import { useAppSelector, useAppDispatch } from "../../store/config";
+import { setCount, fetchAsync } from "../../store/slices/counter";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -19,22 +17,17 @@ export default function Home() {
   const { count } = useSelector((state) => state.counter);
   const dispatch = useDispatch();
 
-  // const { count } = useAppSelector((state) => state.counter);
-  // const dispatch = useAppDispatch();
-
   useEffect(() => {
     console.log(reducer);
     console.log(count);
 
     return () => {};
-  }, []);
+  }, [count, reducer]);
 
   const handleAbout = (e) => {
     e.preventDefault();
 
-    // navigate("/about");
-
-    dispatch(setCount(count + 1));
+    navigate("/about");
   };
 
   return (
@@ -55,7 +48,8 @@ export default function Home() {
         </div>
       </main>
       <footer className={styles.footer}>
-        <AiFillQuestionCircle className="image-button" size="64" onClick={handleAbout} />
+        <AiFillQuestionCircle className="image-button" size="64" onClick={(e) => dispatch(setCount(count + 1))} />
+        <AiFillQuestionCircle className="image-button" size="64" onClick={(e) => dispatch(fetchAsync("thunk"))} />
       </footer>
     </div>
   );
